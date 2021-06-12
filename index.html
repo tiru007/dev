@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Learning Vue</title>
+    <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    Hello World
+
+    <div id="app">
+
+        <div>    
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Device</th>
+                  <th scope="col">RequestedDate</th>
+                  <th scope="col">id</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Approximate Amount</th>
+                  <th scope="col">Actual Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="result in results">
+                  <td>{{ result.deviceName }}</td>
+                  <td>{{ result.requestedDate }}</td>
+                  <td>{{ result.deviceId }}</td>
+                  <td>{{ result.status }}</td>
+                  <td>{{ result.approximateAmount }}</td>
+                  <td>{{ result.actualAmount }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>        
+
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
