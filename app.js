@@ -1,4 +1,4 @@
-const url = "hhttp://localhost:7071/api/GetDevices";
+const url = "https://proud-field-0a2fd9210.azurestaticapps.net/api/getdevices";
 
 const app = Vue.createApp({
    data() {
